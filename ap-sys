@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 if [ ! -d ~/packages ]
 then
@@ -7,7 +7,7 @@ fi
 
 pushd ~/packages
 
-if [ -f .git ]
+if [ ! -f .git ]
 then
 	git init		
 fi
