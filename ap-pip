@@ -7,7 +7,7 @@ fi
 
 pushd ~/packages
 
-if [ ! -f .git ]
+if [ ! -d .git ]
 then
 	git init		
 fi
