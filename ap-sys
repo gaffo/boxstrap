@@ -1,0 +1,4 @@
+#! /bin/sh
+
+echo $1 >> /home/mike/packages
+sudo apt-get install -y $1 
