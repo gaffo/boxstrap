@@ -1,4 +1,18 @@
 #! /bin/sh
 
+if [ ! -d ~/packages ]
+then
+	mkdir -p ~/packages
+fi
+
+pushd ~/packages
+
+if [ -f .git ]
+then
+	git init		
+fi
+
 echo $1 >> /home/mike/packages
 sudo apt-get install -y $1 
+
+popd
