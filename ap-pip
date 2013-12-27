@@ -12,10 +12,10 @@ then
 	git init		
 fi
 
-echo $1 >> packages.system
+echo $1 >> packages.python
 sudo apt-get install -y $1 
 
-git add packages.system
-git commit -m "Adding system package: $1"
+git add packages.python
+git commit -m "Adding python package: $1"
 
 popd
