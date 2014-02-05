@@ -1,0 +1,28 @@
+Boxstrap: Repeatable Machine Configuration
+
+Use Boxstrap instead of your system's package manager and 
+you'll never have to remember what all to install on a machine again.
+
+Boxstrap works by recording all of the packages and other things that
+you install, quickly letting you set up a new machine next time, or 
+recover your current machine after a rebuild or os upgrade.
+
+Install:
+
+cd ~
+git clone http://github.com/gaffo/boxstrap
+ln -s ~/boxstrap/ap-sys /usr/local/bin/ap-sys
+
+Usage:
+
+Instead of apt-get install, run ap-sys. For instance:
+
+instead of:
+
+sudo apt-get install mysql
+
+run:
+
+ap-sys mysql
+
+ 
