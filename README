@@ -10,7 +10,7 @@ recover your current machine after a rebuild or os upgrade.
 Install:
 
 cd ~
-curl -L https://raw.githubusercontent.com/gaffo/boxstrap/master/ap-pip | sh
+curl -L https://raw.githubusercontent.com/gaffo/boxstrap/master/install.sh | sh
 
 Usage:
 
