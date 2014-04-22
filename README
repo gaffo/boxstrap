@@ -10,8 +10,7 @@ recover your current machine after a rebuild or os upgrade.
 Install:
 
 cd ~
-git clone http://github.com/gaffo/boxstrap
-ln -s ~/boxstrap/ap-sys /usr/local/bin/ap-sys
+curl -L https://raw.githubusercontent.com/gaffo/boxstrap/master/ap-pip | sh
 
 Usage:
 
