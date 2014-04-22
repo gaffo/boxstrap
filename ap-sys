@@ -12,9 +12,17 @@ then
 	git init		
 fi
 
-echo $1 >> packages.system
-sudo apt-get install -y $1 
+`which yum`
+yum=$?
 
+if [ $yum ]
+then
+	sudo yum -y install $1
+else
+	sudo apt-get install -y $1
+fi
+
+echo $1 >> packages.system
 git add packages.system
 git commit -m "Adding system package: $1"
 
