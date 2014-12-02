@@ -15,7 +15,7 @@ fi
 `which yum`
 yum=$?
 
-if [ $yum ]
+if [ ! $yum ]
 then
 	sudo yum -y install $1
 else
